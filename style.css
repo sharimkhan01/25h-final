@@ -9,6 +9,11 @@
   }
 body {
       font-family: 'Open Sans', sans-serif;
+      background-image: url(./assets/Image/Background.jpg);
+      background-position: center;
+      background-position-x: center;
+      background-repeat: no-repeat;
+
       
     }
   header{
@@ -22,6 +27,7 @@ body {
     align-items: center !important;
     justify-content: space-around ;
     height: 100px ;
+    width: 100% !important;
   }
   nav .mainMenu {
     display:flex;
@@ -31,10 +37,10 @@ body {
   nav .mainMenu li a {
     display: inline-block !important;
     font-family: 'Open Sans', sans-serif !important;
-    padding: 30px;
+    padding: 20px;
     padding-bottom: 0px !important;
-    padding-left: 50px;
-    padding-right: 50px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
     font-weight: 600;
     text-decoration: none;  
     text-transform: uppercase;
@@ -69,24 +75,34 @@ body {
     
     
   }
-  @media (max-width: 800px) {
+  #check{display: none;}
+  
+  @media (max-width: 655px) {
     nav{
       justify-content: space-between;
     }
-    nav .mainMenu {
-      height: 80vh;
+    nav .mainMenu {  
+      font-size: 20px;
+      height: 100vh;
       position: fixed;
       top: 0px;
       right: 0px;
       left: 0px;
-      z-index: 10;
+      z-index: 100;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background:#334257;
+      background-attachment:fixed;
+      /* background:rgba(255,255,255,0.2); */
+      background:#000;
       transition: top 1s ease 0s;
-      display: none;
-      z-index: 1;
+      /* z-index: 10; */
+      overflow: hidden;
+    }
+    @media (max-width: 755px) {
+      nav .mainMenu li a{
+        font-size: 15px;
+      }
     }
     nav .mainMenu .closeMenu {
       display: block;
@@ -100,6 +116,7 @@ body {
     nav .mainMenu li a:hover {
       background: none;
       color: #548CA8;
+      /* font-size: 30px; */
     }
   }
   

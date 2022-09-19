@@ -1,0 +1,19 @@
+.image-container{
+    background-image: url(./back-contacts.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contacts-heading{
+    display: flex;
+    color: aliceblue;
+    min-height: 300px;
+    position: relative;
+    justify-content: center;
+}
+.head{
+    padding-top: 130px;
+    position: absolute;
+    justify-content: center;
+}
+

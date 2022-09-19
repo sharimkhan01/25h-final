@@ -7,8 +7,8 @@ body{
     background: #eee;
     font-family: sans-serif;
 }
-.background-img {
-    /* background-image: url(./assets/image-cards/image1.jpg); */
+/*.background-img {
+     background-image: url(./assets/image-cards/image1.jpg); 
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -16,6 +16,7 @@ body{
     width: 300%;
     height: 150%;   
 }
+*/
 .flexone{
     flex: 1;
 }
@@ -119,7 +120,13 @@ body{
     margin-top: 40px;
 }
 
-@media screen and (max-width:780px)
+@media screen and (max-width:754px)
+{.groups{    width: 96%;}
+    .groups li:hover{    
+        transform: none;
+         box-shadow: none;}
+}
+@media screen and (max-width:1270px)
 {.groups{    width: 96%;}
     .groups li:hover{    
         transform: none;

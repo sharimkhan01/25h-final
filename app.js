@@ -1,5 +1,6 @@
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
+const carousel = document.querySelector("carousel-indicator");
 const openMenu = document.querySelector(".openMenu");
 const menu_items = document.querySelectorAll("nav .mainMenu li a");
 
@@ -15,6 +16,7 @@ menu_items.forEach((item) => {
 
 function show() {
   mainMenu.style.display = "flex";
+  mainMenu.style.display = "hidden";
   mainMenu.style.top = "0";
 }
 function close() {
